@@ -45,7 +45,7 @@ function validateEmail() {
 }
 
 function validateMsg() {
-  if (msg.value === '') {
+  if (msg.value === '' || msg.value.length <30) {
     spanMsg.textContent = "Message is required";
     spanMsg.setAttribute("class", "msg-error");
   } else {
