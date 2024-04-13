@@ -46,7 +46,7 @@ function validateEmail() {
 
 function validateMsg() {
   if (msg.value === '' || msg.value.length <30) {
-    spanMsg.textContent = "Message should contain atleast 30 characters";
+    spanMsg.textContent = "Required atleast 30 characters";
     spanMsg.setAttribute("class", "msg-error");
   } else {
     var i = document.createElement("i");
