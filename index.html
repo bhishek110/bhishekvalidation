@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="validation.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="main-container">
+    <h2>Validation Form</h2>
+    <div class="container-1">
+      <p>Full Name</p> <input placeholder="John Cena . C" id="name" type="text" onkeyup="validateName()"> <span class="name-error"></span>
+    </div>
+    <div class="container-2">
+      <p>Phone No</p> <input placeholder="123 456 7890" id="phone" type="number" onkeyup="validatePhone()"> <span class="phone-error"></span>
+    </div>
+    <div class="container-3">
+      <p>E-Mail Id</p> <input placeholder="abc123@gmail.com" id="email" type="email" onkeyup="validateEmail()"> <span class="email-error"></span>
+    </div>
+    <div class="container-4">
+      <p>Your Message</p> <textarea placeholder="Enter your message here . . ." id="msg" onkeyup="validateMsg()"></textarea> <span class="msg-error" ></span>
+    </div>
+    <div class="submit-btn">
+      <button class="btn" onclick="submit()">Submit</button>
+      <p class="error"></p>
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="validation.js"></script>
